@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyFjcsfGQDxVY9ymJBFtdeP9h8-AB2MQ9DTQhdz7U2_EZ-YLt9ZTXXV7Jst0GTKzjRU/exec" method="post'
+const scriptURL = 'https://script.google.com/macros/s/AKfycby7ANBRNCw_TBwN7PXGmZXt-CwjI-8p6oekIrp_eU_aOByJPu1sOmgYew93vUxyb4ga/exec'
 const form = document.form['const-form']
 form.addEventListener('submit' , e=> {
 	e.preventDefault()
