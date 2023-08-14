@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="fonts/icomoon/style.css">
+    
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <!-- Style -->
+        <link rel="stylesheet" href="css/style.css">
+    
+        <title>Register With Sri Lanka Music Therapy Association</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+      </head>
+
+
+<body>
+	<div class="d-lg-flex half">
+        <div class="bg order-1 order-md-2" style="background-image: url('images/bg_1.jpg');"></div>
+        <div class="contents order-2 order-md-1">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-7">
+                        <h3>Register With  <strong>Sri Lanka Music Therapy Association</strong></h3>
+                        <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p>
+
+                        <form method="post" action="" name="Full name" id="product">
+
+                            <div class="form-group first">
+                                <label for="naem">Phone number</label>
+                                <input class="form-control" type="text" name="phone number" placeholder="Enter Phone number" required>
+                            </div>
+
+                            <div class="form-group first"> 
+                                <label for="naem">Whatsapp number</label>
+                                <input class="form-control" type="text" name="Whatsapp number" placeholder="Enter Whatsapp number" required>
+                            </div>
+
+                            <div class="form-group first">
+                                <label for="naem">School/University/Job</label>
+                                <input class="form-control" type="text" name="School/University/Job" placeholder="School/University/Job" required>
+                            </div>
+
+                            <div class="form-group first">
+                                <label for="naem">Address of School/University/Job</label>
+                                <input class="form-control" type="text" name="Address of School/University/Job" placeholder="Address of School/University/Job">
+                            </div>
+                        
+                            <div class="form-group first">
+                                <label for="naem">E-Mail</label>
+                                <input class="form-control" type="text" name="E-Mail" placeholder="Enter your Email" required>
+                            </div>
+                            <div class="form-group first">
+                                <label for="">What do you think about music?</label>
+                                <input class="form-control" type="text" name="think" placeholder="What do you think" required>
+                            </div>
+            
+                            <button class="btn btn-block btn-primary">Next &#10132;</button> 
+                            <!--<input type="submit" class="btn btn-block btn-primary" placeholder="&#10132;">-->
+                           
+                
+                        </form>
+                    </div>
+                </div>
+            </div>
+        
+        
+        
+      
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzid0u1LrT8PDKn3fgQx_4OSRjHY82PkxPq924G8Fiuq28o8fQ9MBrEs8kU7ns3hCNzzQ/exec'
+        const form = document.forms['product']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! your form is submitted successfully." ))
+            .then(() => {  location.replace("./form2.html"); })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    <br>
+</body>
+</html>
