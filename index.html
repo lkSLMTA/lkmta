@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="css/style.css">
     
         <title>Register With Sri Lanka Music Therapy Association</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
       </head>
 
 
@@ -60,10 +61,10 @@
                                 <label for="">District</label>
                                 <input class="form-control" type="text" name="District" placeholder="Enter your District" required>
                             </div>
-                
-                            <!--<button class="click">Submit &#10132;</button>-->
-                            <input type="submit" class="btn btn-block btn-primary" placeholder="&#10132;">
-                            
+            
+                            <button class="btn btn-block btn-primary" >Next &#10132;</button>
+                            <!--<input type="submit" class="btn btn-block btn-primary" placeholder="&#10132;">
+                            -->
                 
                         </form>
                     </div>
@@ -82,7 +83,7 @@
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => alert("Thank you! your form is submitted successfully." ))
-            .then(() => {  window.location.reload(); })
+            .then(() => {  location.replace("./form.html"); })
             .catch(error => console.error('Error!', error.message))
         })
       </script>
